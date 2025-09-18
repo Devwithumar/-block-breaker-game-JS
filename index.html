@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Breaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="lives">Lives: <span id="lives">3</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="instructions">
+            Use arrow keys or mouse to move paddle • Catch power-ups • Break all bricks to win!
+        </div>
+    </div>
+    
+    <div id="overlay" class="overlay">
+        <h2 id="overlayTitle">Game Over</h2>
+        <p id="overlayText">Better luck next time!</p>
+        <button onclick="game.restart()">Play Again</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
